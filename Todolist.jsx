@@ -17,7 +17,7 @@ export default function Todolist() {
     }
 
     function Edit(index){
-        const edit = prompt("enter edit your data", data[index])
+        const edit = prompt("enter your data", data[index])
         const newdata = [...data]
         newdata[index] = edit
         setData(newdata)    
@@ -25,8 +25,8 @@ export default function Todolist() {
 
   return (
     <div>
-        <h4>Simple Todo</h4>
-        <input type="text" name="" id="" value={state} placeholder='eneter your txet'  onChange={(e)=>setState(e.target.value)}/>
+        <h4>Simple Todolist</h4>
+        <input type="text" name="" id="" value={state} placeholder='eneter txet'  onChange={(e)=>setState(e.target.value)}/>
         <button onClick={addData}>Add Data</button>
 
         {
