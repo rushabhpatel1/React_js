@@ -10,7 +10,7 @@ export default function Todolist() {
         setState("")
     }
 
-    function Del(index){
+    function Delete(index){
         const newdata = [...data]
         newdata.splice(index , 1)
         setData(newdata)
@@ -33,7 +33,7 @@ export default function Todolist() {
             data.map((e,i)=>{
                 return <li>
                     {e}
-                    <button onClick={()=>Del(i)}>Delete</button> 
+                    <button onClick={()=>Delete(i)}>Delete</button> 
                     <button onClick={()=>Edit(i)}>Edit</button>
                 </li>
             })
